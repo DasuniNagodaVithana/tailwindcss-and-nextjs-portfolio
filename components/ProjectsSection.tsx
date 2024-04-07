@@ -3,6 +3,7 @@ import Image from "next/image";
 import SlideUp from "./SlideUp";
 import { BsGithub } from "react-icons/bs";
 import { HiArrowDown } from "react-icons/hi";
+import Link from "next/link";
 
 const projects = [
   {
@@ -27,6 +28,9 @@ const ProjectsSection = () => {
           <SlideUp offset="-300px 0px -300px 0px">
             <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
               <div className=" md:w-1/2">
+                <Link href={{
+                  pathname:"/ProjectInfo"
+                }}>
                 <Image
                   src={project.image}
                   alt=""
@@ -34,6 +38,7 @@ const ProjectsSection = () => {
                   height={200}
                   className="rounded-xl shadow-xl hover:opacity-70"
                 />
+                </Link>
               </div>
               <div className="mt-8 md:w-1/2">
                 <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
