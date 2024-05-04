@@ -2,8 +2,8 @@ import React from "react";
 
 const ProjectInfo = () => {
   return (
-    <section id="project-info" className="my-12 max-w-4xl text-center">
-      <div className="flex flex-col items-center pl-10 mt-32 w-full lg:p-20 lg:w-4/5 lg:mt-0">
+    <section id="project-info" className="">
+      <div className="p5" style={{padding:'2rem'}}>
         <h2 className="text-2xl font-bold mb-4">Project Information</h2>
         <div className="mx-4 md:mx-10">
           <p className="mb-4">
