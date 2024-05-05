@@ -3,14 +3,14 @@ import React from "react"
 import Image from "next/image"
 import { Link } from "react-scroll/modules"
 import { HiArrowDown } from "react-icons/hi"
-
+import me from '/public/me.jpg'
 const HeroSection = () => {
   return (
     <section id="home">
        <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-5 py-16 sm:py-16 md:py-40 lg:py-16 xl:py-56 md:flex-row md:justify-center md:space-x-4 md:text-left">
         <div className="lg:mt-20 lg:pt-16 md:mt-2 md:w-1/2 ">
       <Image
-        src="/me.jpg"
+        src={me}
         alt=""
         width={800} 
         height={400}
