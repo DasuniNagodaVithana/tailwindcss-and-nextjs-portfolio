@@ -4,6 +4,7 @@ import SlideUp from "./SlideUp";
 import { BsGithub } from "react-icons/bs";
 import { HiArrowDown } from "react-icons/hi";
 import Link from "next/link";
+import projectImage from '/public/home1.jpg'
 
 const projects = [
   {
@@ -32,7 +33,7 @@ const ProjectsSection = () => {
                   pathname:"/ProjectInfo"
                 }}>
                 <Image
-                  src={project.image}
+                  src={projectImage}
                   alt=""
                   width={200}
                   height={200}

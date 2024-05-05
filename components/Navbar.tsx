@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
-import Image from 'next/image';
+import navBarImage from '/public/greenlogo.png'
+import Image from "next/image"
 
 interface NavItem {
   label: string
@@ -44,8 +45,8 @@ export default function Navbar() {
             <Link to="home">
               <div className="container flex items-center space-x-2">
                 {/* My Logo*/}
-                <img
-                  src="/greenlogo.png"
+                <Image
+                  src={navBarImage}
                   alt=""
                   width={150} 
                   height={10}        

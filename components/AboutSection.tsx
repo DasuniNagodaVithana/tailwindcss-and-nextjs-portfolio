@@ -3,7 +3,9 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { HiArrowDown } from "react-icons/hi";
-import { Link } from "react-scroll/modules"
+import { Link } from "react-scroll/modules";
+import hero from '/public/hero-image.png'
+
 
 const AboutSection = () => {
   const [activeTab, setActiveTab] = useState("skills");
@@ -25,7 +27,7 @@ const AboutSection = () => {
       <div className="flex flex-col md:flex-row space-y-10 items-center justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:text-left">
         <div className="md:w-1/2 md:order-last">
           <Image
-            src="/hero-image.png"
+            src={hero}
             alt=""
             width={325}
             height={325}
