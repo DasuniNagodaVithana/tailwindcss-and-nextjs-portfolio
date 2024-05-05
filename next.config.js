@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/tailwindcss-and-nextjs-portfolio",
+  basePath: '/tailwindcss-and-nextjs-portfolio',
   output: "export",
   eslint: {
     ignoreDuringBuilds: true,
